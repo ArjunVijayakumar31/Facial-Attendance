@@ -38,14 +38,8 @@ This project implements a face recognition attendance system using OpenCV, face_
     - The structure should look like this:
         ```
         images/
-        ├── Person1/
-        │   ├── img1.jpg
-        │   ├── img2.jpg
-        │   └── ...
-        ├── Person2/
-        │   ├── img1.jpg
-        │   ├── img2.jpg
-        │   └── ...
+        ├── img1.jpg
+        ├── img2.jpg
         └── ...
         ```
 
