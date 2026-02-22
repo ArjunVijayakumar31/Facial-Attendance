@@ -16,6 +16,7 @@ This project implements a face recognition attendance system using OpenCV, face_
 - OpenCV
 - face_recognition
 - numpy
+- pandas
 - A webcam or an external camera
 
 ## Installation
@@ -50,12 +51,9 @@ This project implements a face recognition attendance system using OpenCV, face_
 
 ## Usage
 
-1. Run the script:
-    ```sh
-    python face_recognition_attendance.py
-    ```
+1. Run the script:1. Run the script:
 
-2. The webcam will start, and the system will begin detecting and recognizing faces.
+2. The webcam will start, and the system will begin detecting and recognizing faces.2. The webcam will start, and the system will begin detecting and recognizing faces.
 
 3. The recognized faces will be displayed with bounding boxes and names.
 
@@ -65,5 +63,9 @@ This project implements a face recognition attendance system using OpenCV, face_
 
 - **No module named 'cv2'**: Make sure OpenCV is installed using `pip install opencv-python`.
 - **No module named 'face_recognition'**: Install the face_recognition package using `pip install face-recognition`.
+- **Face recognition installation issue**: Face recognition requires additional dependencies. Install CMake first: `pip install cmake`
+Then install dlib: python -m pip install dlib If dlib installation fails (especially on Windows), you can download the compatible .whl file from:
+`https://github.com/sachadee/Dlib/blob/main/dlib-20.0.0-cp310-cp310-win_amd64.whl�`
+After downloading, install it using: `python -m pip install dlib-20.0.0-cp310-cp310-win_amd64.whl`
 - **FileNotFoundError**: Ensure the directory structure is correctly set up with the `images` directory and subfolders for each person.
 - **Webcam not detected**: Check if your webcam is properly connected and accessible. Try using another application to verify.
